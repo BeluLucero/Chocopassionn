@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*inicio header*/
+
+span {
+  font-family: "Dancing Script", cursive;
+  color: #9a5626;
+  font-size: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 50px;
+  align-items: center;
+}
+nav {
+  justify-content: space-between;
+  display: flex;
+}
+nav,
+ul {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  list-style-type: none;
+  width: 65%;
+  margin-left: 180px;
+  padding: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.imagen-portada {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  align-items: center;
+}
+
+/*fin header*/
+
+/*inicio main*/
+
+.letra-index {
+  font-family: roboto-light sans-serif;
+  text-align: justify;
+  margin-right: 65px;
+  margin-left: 65px;
+}
+.descripcion {
+  padding: 10px;
+}
+.subtitulo {
+  font-family: "Dancing Script", cursive;
+  color: #9a5626;
+  justify-content: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.video {
+  margin: 60px;
+  margin-left: 300px;
+  align-items: center;
+}
+.material-icons {
+  color: burlywood;
+}
+.seguinos {
+  color: #9a5626;
+  padding: 15px;
+  margin-left: 550px;
+  padding-top: 30px;
+}
+.redes li a {
+  list-style-type: none;
+  font-family: roboto-light sans-serif;
+  display: flex;
+  color: black;
+  text-decoration: none;
+}
+
+/*fin main*/
+
+/*recetas*/
+
+.productos {
+  color: #9a5626;
+  font-family: roboto-light sans-serif;
+  text-align: justify;
+  margin-right: 65px;
+  margin-left: 65px;
+}
+
+.lista-recetario li {
+  padding: 15px;
+}
+.imagen-recetas2 {
+  margin-left: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.bombones {
+  width: 300px;
+}
+.galletas-chocolate {
+  width: 300px;
+}
+.tarta-cabsha {
+  width: 300px;
+}
+.datos {
+  font-family: roboto-light sans-serif;
+  text-align: justify;
+  margin-right: 65px;
+  margin-left: 65px;
+}
+/*fin recetas*/
+
+.nosotros {
+  color: #9a5626;
+}
+
+/*inicio portfolio*/
+
+.grid-portfolio {
+  display: grid;
+  grid-template-rows: repeat(2, 400px);
+  grid-template-columns: repeat(4, 300px);
+  grid-template-areas:
+    "caja1 caja2 caja3 caja4"
+    "caja5 caja6 caja7 caja8";
+  margin: 30px;
+  object-fit: cover;
+}
+.medidas {
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+.medidas-budin {
+  display: flex;
+}
+
+/*fin portfolio*/
+
+/*inicio contacto*/
+
+.maps {
+margin: 20px
+}
+.mapa {
+  display: flex;
+  margin-left: 40px;
+}
+/*fin contacto/
+
+/*inicio recetas*/
+.recetario {
+  padding: 30px;
+  margin-left: 30px;
+}
+/*fin recetas*/
+
+/*inicio sobre nosotros*/
+.sobre-nosotros {
+  font-family: roboto-light sans-serif;
+  text-align: justify;
+  margin-right: 65px;
+  margin-left: 65px;
+  margin-top: 40px;
+}
+/*fin nosotros*/
+
+/*media queries*/
+/*mobile*/
+nav ul{
+  display: none;
+}
+
+input:checked  ~ ul{
+  display:block;
+}
+input {
+  display: none;
+ }
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+nav ul li {
+  display: block;
+  background: lightgrey;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-portfolio{
+    grid-template-rows: auto;
+    grid-template-columns: 400px;
+    grid-template-areas:
+      "caja1"
+      "caja2"
+      "caja3"
+      "caja4"
+      "caja5" 
+      "caja6"
+      "caja7" 
+      "caja8";
+      padding-right:30px ;
+}
+}
+  
