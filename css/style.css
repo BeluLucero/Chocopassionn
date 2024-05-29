@@ -21,6 +21,9 @@ span {
   width: 50px;
   align-items: center;
 }
+.menu-bar {
+  display: none;
+}
 nav {
   justify-content: space-between;
   display: flex;
@@ -84,7 +87,7 @@ nav ul li a {
   margin-left: 550px;
   padding-top: 30px;
 }
-.redes li a {
+.redes li {
   list-style-type: none;
   font-family: roboto-light sans-serif;
   display: flex;
@@ -160,7 +163,7 @@ nav ul li a {
 /*inicio contacto*/
 
 .maps {
-margin: 20px
+  margin: 20px;
 }
 .mapa {
   display: flex;
@@ -185,41 +188,19 @@ margin: 20px
 }
 /*fin nosotros*/
 
+/*pseudoelemntos*/
+
+nav ul li:hover{
+  background-color: rgb(243, 205, 80);
+  padding: 10px;
+  border-radius: 10px 0;
+}
+
 /*media queries*/
 /*mobile*/
-nav ul{
-  display: none;
-}
-
-input:checked  ~ ul{
-  display:block;
-}
-input {
-  display: none;
- }
-label {
-  box-sizing: border-box;
-  display: inline-block;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  font-weight: bold;
-  text-align: center;
-  user-select: none;
-}
-nav ul li {
-  display: block;
-  background: lightgrey;
-  margin: 0;
-  padding: 10px;
-  list-style: none;
-  border-bottom: 1px solid grey;
-}
 
 @media screen and (max-width: 768px) {
-  .grid-portfolio{
+  .grid-portfolio {
     grid-template-rows: auto;
     grid-template-columns: 400px;
     grid-template-areas:
@@ -227,11 +208,32 @@ nav ul li {
       "caja2"
       "caja3"
       "caja4"
-      "caja5" 
+      "caja5"
       "caja6"
-      "caja7" 
+      "caja7"
       "caja8";
-      padding-right:30px ;
+    padding-right: 30px;
+  }
+  header nav {
+    width: 80%;
+    height: 100%;
+    left: -100%;
+    margin: 0;
+    position: fixed;
+  }
+
+  header nav ul li {
+    display: block;
+    float: none;
+  }
+
+  .menu-bar {
+    display: block;
+    width: 100%;
+  }
+
+  .menu_bar span {
+    float: right;
+    font-size: 40px;
+  }
 }
-}
-  
