@@ -202,7 +202,7 @@ nav ul li:hover{
 @media screen and (max-width: 768px) {
   .grid-portfolio {
     grid-template-rows: auto;
-    grid-template-columns: 400px;
+    grid-template-columns: auto;
     grid-template-areas:
       "caja1"
       "caja2"
