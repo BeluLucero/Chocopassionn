@@ -87,7 +87,7 @@ nav ul li a {
   margin-left: 550px;
   padding-top: 30px;
 }
-.redes li {
+.horizontal-redes{
   list-style-type: none;
   font-family: roboto-light sans-serif;
   display: flex;

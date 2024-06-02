@@ -1,0 +1,13 @@
+@import "../scss/utilities/reset";
+@import "../scss/utilities/variables";
+@import "../scss/utilities/mixin";
+@import "../scss/utilities/extend";
+@import "../scss/utilities/global";
+
+
+@import "./components/header";
+@import "./pages/main-catalogo";
+@import "./components/footer";
+
+
+@import "../scss/utilities/media-querie";
