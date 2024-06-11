@@ -93,6 +93,7 @@ nav ul li a {
   display: flex;
   color: black;
   text-decoration: none;
+  margin: 30px;
 }
 
 /*fin main*/
