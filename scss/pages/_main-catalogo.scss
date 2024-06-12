@@ -1,128 +1,125 @@
 .video {
-    margin: 60px;
-    margin-left: 300px;
-    align-items: center;
-  }
+  margin: 60px;
+  margin-left: 300px;
+  align-items: center;
+}
 
-  .material-icons {
-    color: burlywood;
-  }
-  
-  .productos {
-    color: #9a5626;
-    font-family: roboto-light sans-serif;
-    text-align: justify;
-    margin-right: 65px;
-    margin-left: 65px;
-  }
-  
-  .lista-recetario li {
-    padding: 15px;
-  }
-  .imagen-recetas2 {
-    margin-left: 200px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .bombones {
-    width: 300px;
-  }
-  .galletas-chocolate {
-    width: 300px;
-  }
-  .tarta-cabsha {
-    width: 300px;
-  }
-  .datos {
-    font-family: roboto-light sans-serif;
-    text-align: justify;
-    margin-right: 65px;
-    margin-left: 65px;
-  }
-  grid-portfolio {
-    display: grid;
-    grid-template-rows: repeat(2, 400px);
-    grid-template-columns: repeat(4, 300px);
-    grid-template-areas:
-      "caja1 caja2 caja3 caja4"
-      "caja5 caja6 caja7 caja8";
-    margin: 30px;
-    object-fit: cover;
-  }
-  .medidas {
-    display: flex;
-    width: auto;
-    height: auto;
-    padding: 10px;
-  }
-  .medidas-budin {
-    display: flex;
-  }
-  .maps {
-    margin: 20px;
-  }
-  .mapa {
-    display: flex;
-    margin-left: 40px;
-  }
-  .recetario {
-    padding: 30px;
-    margin-left: 30px;
-  }
-  .sobre-nosotros {
-    font-family: roboto-light sans-serif;
-    text-align: justify;
-    margin-right: 65px;
-    margin-left: 65px;
-    margin-top: 40px;
-  }
+.material-icons {
+  color: burlywood;
+}
 
-  /*pseudoelemntos*/
-  nav ul li:hover{
-    background-color: rgb(243, 205, 80);
-    padding: 10px;
-    border-radius: 10px 0;
-  }
+.productos {
+  color: #9a5626;
+  font-family: roboto-light sans-serif;
+  text-align: justify;
+  margin-right: 65px;
+  margin-left: 65px;
+}
 
-  /*media queries*/
+.lista-recetario li {
+  padding: 15px;
+}
+.imagen-recetas2 {
+  margin-left: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.bombones {
+  width: 300px;
+}
+.galletas-chocolate {
+  width: 300px;
+}
+.tarta-cabsha {
+  width: 300px;
+}
+.datos {
+  font-family: roboto-light sans-serif;
+  text-align: justify;
+  margin-right: 65px;
+  margin-left: 65px;
+}
+.grid-portfolio {
+  display: grid;
+  grid-template-rows: repeat(2, 400px);
+  grid-template-columns: repeat(4, 300px);
+  grid-template-areas:
+    "caja1 caja2 caja3 caja4"
+    "caja5 caja6 caja7 caja8";
+  margin: 30px;
+  object-fit: cover;
+}
+
+.medidas {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  object-fit: cover;
+}
+.medidas-budin {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.maps {
+  margin: 20px;
+}
+.mapa {
+  display: flex;
+  margin-left: 40px;
+}
+.recetario {
+  padding: 30px;
+  margin-left: 30px;
+}
+.sobre-nosotros {
+  font-family: roboto-light sans-serif;
+  text-align: justify;
+  margin-right: 65px;
+  margin-left: 65px;
+  margin-top: 40px;
+}
+
+/*media queries*/
 /*mobile*/
 
 @media screen and (max-width: 768px) {
-    .grid-portfolio {
-      grid-template-rows: auto;
-      grid-template-columns: auto;
-      grid-template-areas:
-        "caja1"
-        "caja2"
-        "caja3"
-        "caja4"
-        "caja5"
-        "caja6"
-        "caja7"
-        "caja8";
-      padding-right: 30px;
-    }
-    header nav {
-      width: 80%;
-      height: 100%;
-      left: -100%;
-      margin: 0;
-      position: fixed;
-    }
-  
-    header nav ul li {
+  .grid-portfolio {
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "caja1"
+      "caja2"
+      "caja3"
+      "caja4"
+      "caja5"
+      "caja6"
+      "caja7"
+      "caja8";
+    padding-right: 30px;
+  }
+  header nav {
+    width: 80%;
+    height: 100%;
+    left: -100%;
+    margin: 0;
+    position: fixed;
+
+    ul li {
       display: block;
       float: none;
     }
-  
-    .menu-bar {
-      display: block;
-      width: 100%;
-    }
-  
-    .menu_bar span {
-      float: right;
-      font-size: 40px;
-    }
   }
-  
+
+  .menu-bar {
+    display: block;
+    width: 100%;
+  }
+
+  .menu_bar span {
+    float: right;
+    font-size: 40px;
+  }
+}

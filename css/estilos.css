@@ -36,6 +36,11 @@ nav ul {
   margin-left: 180px;
   padding: 15px;
 }
+nav ul li :hover {
+  background-color: rgb(243, 205, 80);
+  padding: 10px;
+  border-radius: 10px 0;
+}
 nav ul li a {
   text-decoration: none;
   color: black;
@@ -116,7 +121,7 @@ nav ul li a {
   margin-left: 65px;
 }
 
-grid-portfolio {
+.grid-portfolio {
   display: grid;
   grid-template-rows: repeat(2, 400px);
   grid-template-columns: repeat(4, 300px);
@@ -127,13 +132,16 @@ grid-portfolio {
 
 .medidas {
   display: flex;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   padding: 10px;
+  object-fit: cover;
 }
 
 .medidas-budin {
-  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .maps {
@@ -156,13 +164,6 @@ grid-portfolio {
   margin-right: 65px;
   margin-left: 65px;
   margin-top: 40px;
-}
-
-/*pseudoelemntos*/
-nav ul li:hover {
-  background-color: rgb(243, 205, 80);
-  padding: 10px;
-  border-radius: 10px 0;
 }
 
 /*media queries*/
@@ -199,6 +200,7 @@ nav ul li:hover {
   padding: 15px;
   margin-left: 550px;
   padding-top: 30px;
+  font-size: 20px;
 }
 
 .horizontal-redes {
@@ -210,7 +212,7 @@ nav ul li:hover {
 }
 
 ul li {
-  margin: 50px;
+  margin: 100px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
