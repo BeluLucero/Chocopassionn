@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 
 span {
-  font-family: "Dancing Script", cursive;
-  color: #9a5626;
+  @include flex (row, center, center);
+  font-family: $letra-span;
+  color: $marron;
   font-size: 50px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  
 }
 
 .logo {
@@ -21,24 +20,22 @@ nav {
   display: flex;
 
   ul {
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
+    @include flex (row, center, space-around);
     list-style-type: none;
     width: 65%;
-    margin-left: 30px;
+    margin-left: 250px;
     padding: 15px;
-  
-  li {
-    :hover{
-      background-color: rgb(243, 205, 80);
-      border-radius: 10px 0;
+
+    li {
+      :hover {
+        background-color: $amarillo;
+        border-radius: 10px 0;
+      }
     }
-  }
 
     li a {
       text-decoration: none;
-      color: black;
+      color: $negro;
       font-size: 18px;
       font-weight: 400;
     }
@@ -46,26 +43,27 @@ nav {
 }
 
 .imagen-portada {
-  display: flex;
+  @include flex (row, center, center);
   width: 100%;
   padding: 30px;
-  align-items: center;
+  
 }
 
 .letra-index {
-  font-family: roboto-light sans-serif;
+  font-family: $letra-index;
   text-align: justify;
-  margin-right: 65px;
-  margin-left: 65px;
+  margin-right: 80px;
+  margin-left: 80px;
 }
 .descripcion {
-  padding: 10px;
+  padding: 20px;
 }
 .subtitulo {
-  font-family: "Dancing Script", cursive;
-  color: #9a5626;
+  font-family: $letra-span;
+  color: $marron;
   justify-content: left;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  margin-left: 20px;
 }
-
