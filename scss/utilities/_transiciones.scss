@@ -1,16 +1,13 @@
-main {
+.baño-chocolate {
   display: flex;
   flex-wrap: wrap;
-  .baño-chocolate {
-    border: 10px;
-    margin-top: 10px;
-    padding: 10px;
-
-  }
-  &.scale {
-    transition: transform 3s ease-in-out 5ms;
-    &:hover {
-      transform: scale(0.5);
-    }
+  border: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+&.scale {
+  transition: transform 3s ease-in-out 5ms;
+  &:hover {
+    transform: scale(0.5);
   }
 }
