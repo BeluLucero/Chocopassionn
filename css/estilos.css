@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 * {
   padding: 0;
@@ -229,6 +230,44 @@ footer ul li {
     float: right;
     font-size: 40px;
   }
+}
+@keyframes caida-chocolate {
+  0% {
+    transform: scale(3);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1, 2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 1;
+  }
+}
+.baño-chocolate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  animation: baño-chocolate 1s infinite;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .baño-chocolate {
+  border: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+main.scale {
+  transition: transform 3s ease-in-out 5ms;
+}
+main.scale:hover {
+  transform: scale(0.5);
 }
 
 /*# sourceMappingURL=estilos.css.map */

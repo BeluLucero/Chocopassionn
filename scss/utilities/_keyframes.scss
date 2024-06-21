@@ -1,0 +1,23 @@
+@keyframes caida-chocolate {
+  0% {
+    transform: scale(3);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1, 2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 1;
+  }
+}
+
+.baño-chocolate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    animation: baño-chocolate 1s infinite;
+  }
