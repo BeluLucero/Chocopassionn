@@ -5,9 +5,4 @@
   margin-top: 10px;
   padding: 10px;
 }
-&.scale {
-  transition: transform 3s ease-in-out 5ms;
-  &:hover {
-    transform: scale(0.5);
-  }
-}
+
