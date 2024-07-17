@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 
 span {
-  @include flex (row, center, center);
+  @include flex(row, center, center);
   font-family: $letra-span;
   color: $marron;
   font-size: 50px;
-  
 }
 
 .logo {
@@ -20,33 +19,29 @@ nav {
   display: flex;
 
   ul {
-    @include flex (row, center, space-around);
+    @include flex(row, center, space-around);
     list-style-type: none;
     width: 65%;
     margin-left: 250px;
     padding: 15px;
 
-    li {
-      :hover {
-        background-color: $amarillo;
-        border-radius: 10px 0;
-      }
-    }
+    li:hover {
+      background-color: $amarillo;
+      border-radius: 10px 0;
 
-    li a {
-      text-decoration: none;
-      color: $negro;
-      font-size: 18px;
-      font-weight: 400;
+      a {
+        text-decoration: none;
+        color: $negro;
+        font-size: 18px;
+        font-weight: 400;
+      }
     }
   }
 }
-
 .imagen-portada {
-  @include flex (row, center, center);
+  @include flex(row, center, center);
   width: 100%;
   padding: 30px;
-  
 }
 
 .letra-index {

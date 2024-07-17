@@ -2,40 +2,45 @@
 /*mobile*/
 
 @media screen and (max-width: 768px) {
-    .grid-portfolio {
-      grid-template-rows: auto;
-      grid-template-columns: auto;
-      grid-template-areas:
-        "caja1"
-        "caja2"
-        "caja3"
-        "caja4"
-        "caja5"
-        "caja6"
-        "caja7"
-        "caja8";
-      padding-right: 30px;
-    }
-    header nav {
-      width: 80%;
-      height: 100%;
-      left: -100%;
-      margin: 0;
-      position: fixed;
-  
-      ul li {
-        display: block;
-        float: none;
-      }
-    }
-  
-    .menu-bar {
+  .grid-portfolio {
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "caja1"
+      "caja2"
+      "caja3"
+      "caja4"
+      "caja5"
+      "caja6"
+      "caja7"
+      "caja8";
+    padding-right: 30px;
+  }
+  header nav {
+    width: 80%;
+    height: 100%;
+    left: -100%;
+    margin: 40px;
+    position: fixed;
+
+    ul li {
       display: block;
-      width: 100%;
-    }
-  
-    .menu_bar span {
-      float: right;
-      font-size: 40px;
+      float: none;
     }
   }
+
+  .menu-bar {
+    display: block;
+    width: 100%;
+  }
+
+  .video {
+    display: none;
+  }
+  .seguinos {
+    margin-left: 50px;
+    padding-left: 100px;
+  }
+  
+
+}

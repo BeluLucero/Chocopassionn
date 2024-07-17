@@ -1,8 +1,14 @@
-.baño-chocolate {
+main.letra-index {
   display: flex;
-  flex-wrap: wrap;
-  border: 10px;
-  margin-top: 10px;
-  padding: 10px;
-}
 
+  div {
+    border: none;
+    margin: 15px;
+    width: fit-content;
+
+    img {
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      width: 200px;
+    }
+  }
+}
